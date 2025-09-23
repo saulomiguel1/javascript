@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura Condicional</title>
+</head>
+<body>
+    <h1>País de origem</h1>
+    <p>País em que mora: <input type="text" name="pais" id="ipais"></p>
+    <input type="button" value="Enviar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function calcular() {
+            var lar = document.getElementById('ipais')
+            var res = document.getElementById('res')
+            res.innerHTML = `<p>Você mora nesse país: <strong>${lar}</strong></p>`
+            var ilar = String(lar.value)
+            if (lar = 'Brasil') {
+                res.innerHTML += `Você é brasileiro!`
+            } else {
+                res.innerHTML += `Você é estrangeiro!`
+            }
+        }
+    </script>
+</body>
+</html>
