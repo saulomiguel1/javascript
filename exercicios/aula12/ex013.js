@@ -34,5 +34,5 @@ switch (diaSem) {
         console.log('Hoje é sábado!')
         break
     default:
-        console.log('[ERRO] DIA INVÁLIDO')
+        console.log('[ERRO] DIA INVÁLIDO ')
 }
